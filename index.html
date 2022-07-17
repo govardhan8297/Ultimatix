@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-y: hidden;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        /* background-color: black; */
+        display: flex;
+      }
+      .part-one {
+        width: 40%;
+        /* background-color: white; */
+        min-height: 100vh;
+      }
+      img[src="images/web_illustration.png"] {
+        padding: 0;
+        margin: 0;
+        width: 38%;
+        overflow-y: hidden;
+        min-height: 100vh;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+      img[src="images/TCS_White_2021_V2.png"] {
+        z-index: 1000;
+        /* width: 50%; */
+        position: relative;
+        top: 118px;
+        left: 277px;
+      }
+      .terms {
+        font-size: 12.5px;
+        z-index: 1000;
+        position: absolute;
+        bottom: 23px;
+        text-align: center;
+        left: 11%;
+        color: #fff;
+        cursor: pointer;
+      }
+      .terms .strong {
+        font-weight: 500;
+      }
+      .terms .cr {
+        padding-top: 5px;
+        font-size: 13px;
+      }
+      .cr1 {
+        opacity: 0.7;
+      }
+      /* .part-two {
+              position: absolute;
+              top: 10%;
+              left: 50%;
+            } */
+      .part-two {
+        position: absolute;
+        top: 59px;
+        left: 62%;
+      }
+      .part-two img[src="images/logo_ultimatix.svg"] {
+        width: 50%;
+        height: 200px;
+      }
+
+      /* .data {
+              overflow-x: hidden;
+              margin-top: 160px;
+            } */
+      /* .textinput form {
+              overflow-x: hidden;
+            } */
+      /* .textinput input {
+              width: 250px;
+              overflow: hidden;
+              outline: none;
+              border: none;
+              border-bottom: 0.2px solid rgb(98, 98, 98);
+
+              padding: 15px;
+             
+            } */
+      input[type="text"]::-webkit-inner-spin-button,
+      input[type="text"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+        text-align: center;
+      }
+      ::-webkit-input-placeholder {
+        text-align: center;
+      }
+      :-moz-placeholder {
+        text-align: center;
+      }
+      /* .idInput {
+              text-align: center;
+              font-size: large;
+            } */
+      .user-input-wrp {
+        position: relative;
+        width: 68%;
+        margin-top: 160px;
+        overflow-x: hidden;
+        display: flex;
+      }
+      .user-input-wrp .inputText {
+        width: 100%;
+        overflow-x: hidden;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #777;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+        box-shadow: none !important;
+        font-size: 18px;
+      }
+      .user-input-wrp .inputText:focus {
+        border-color: blue;
+        border-width: medium medium 1px;
+        text-align: center;
+        padding: 10px;
+      }
+      .user-input-wrp .floating-label {
+        position: absolute;
+        font-size: 18px;
+        opacity: 0.6;
+        pointer-events: none;
+        top: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        left: 80px;
+        transition: 0.2s ease all;
+      }
+      .user-input-wrp input:focus ~ .floating-label,
+      .user-input-wrp input:not(:focus):valid ~ .floating-label {
+        top: -6px;
+        overflow-y: visible;
+        left: 95px;
+        font-size: 12px;
+        opacity: 1;
+        color: blue;
+        text-align: center;
+        align-items: center;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+      }
+      .material-icons {
+        overflow: hidden;
+        position: relative;
+        left: -30px;
+        top: 10px;
+        cursor: pointer;
+      }
+      .fa-user-lock {
+        position: relative;
+        top: 10px;
+        left: 50px;
+        width: 20px;
+        color: black;
+        height: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="part-one">
+      <img src="images/TCS_White_2021_V2.png" alt="tcs logo" />
+      <img src="images/web_illustration.png" alt="logo" />
+      <div class="terms">
+        <p class="strong">Terms of Use | Browser and Display Compatibility</p>
+        <p class="cr cr1">Copyright © 2022 Tata Consultancy Services</p>
+        <p class="cr1">
+          Entry to this site is restricted to employees and affiliates.
+        </p>
+      </div>
+    </section>
+    <section class="part-two">
+      <img
+        src="images/logo_ultimatix.svg"
+        alt="ult_logo"
+        style="z-index: 1000"
+      />
+      <div class="user-input-wrp">
+        <br />
+        <input type="text" class="inputText" required />
+        <span class="floating-label">Username</span
+        ><i class="material-icons">visibility off</i>
+        <i class="fa-solid fa-user-lock"></i>
+      </div>
+    </section>
+  </body>
+</html>
